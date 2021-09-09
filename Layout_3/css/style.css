@@ -93,7 +93,7 @@ header .main__header {
   display: block;
 }
 
-.theme-switch img {
+.theme-switch li {
   font-size: 20px;
   margin-right: 15px;
 }

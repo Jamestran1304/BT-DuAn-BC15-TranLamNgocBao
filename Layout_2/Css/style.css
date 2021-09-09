@@ -493,8 +493,8 @@ header .header-btn {
 
 #faq .faq-page ul li i::before {
   content: "\f078";
-  font-family: Font Awesome 5 free;
-  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
   position: absolute;
   background-color: #2c3038;
   width: 3px;
@@ -504,6 +504,8 @@ header .header-btn {
 
 #faq .faq-page ul li i::after {
   content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
   position: absolute;
   background-color: #2c3038;
   width: 3px;

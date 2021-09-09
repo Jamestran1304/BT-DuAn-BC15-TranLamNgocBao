@@ -500,6 +500,8 @@ header .header-btn {
   height: 9px;
   transition: all 0.5 ease-in-out;
   opacity: 1;
+  transform: translate(0, 0);
+  z-index: 2;
 }
 
 #faq .faq-page ul li i::after {
@@ -516,18 +518,12 @@ header .header-btn {
   z-index: 2;
 }
 
-#faq .faq-page ul li i:checked ~ ::before {
-  margin-top: 0;
-  max-height: 0;
+#faq .faq-page ul li input:checked ~ i::before {
   opacity: 0;
-  transform: translate(0, 50%);
 }
 
-#faq .faq-page ul li i:checked ~ ::after {
-  margin-top: 0;
-  max-height: 0;
+#faq .faq-page ul li input:checked ~ i::after {
   opacity: 1;
-  transform: translate(0, 50%);
 }
 
 .faq-page h2 {

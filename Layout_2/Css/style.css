@@ -500,7 +500,6 @@ header .header-btn {
   height: 9px;
   transition: all 0.5 ease-in-out;
   opacity: 1;
-  
 }
 
 #faq .faq-page ul li i::after {
@@ -511,16 +510,23 @@ header .header-btn {
   width: 3px;
   height: 9px;
   transition: all 0.5 ease-in-out;
-  opacity:1;
+  opacity: 0;
   overflow: hidden;
   transform: translate(0, 0);
   z-index: 2;
 }
 
-#faq .faq-page ul li i:checked~::after{
+#faq .faq-page ul li i:checked ~ ::before {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
+  transform: translate(0, 50%);
+}
+
+#faq .faq-page ul li i:checked ~ ::after {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 1;
   transform: translate(0, 50%);
 }
 
@@ -596,7 +602,6 @@ header .header-btn {
   clear: left;
   border-color: rgb(193, 193, 193);
 }
-
 
 #project img {
   vertical-align: middle;

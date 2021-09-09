@@ -495,7 +495,7 @@ header .header-btn {
   content: "\f078";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
-  position: absolute;
+  position: relative;
   width: 3px;
   height: 9px;
   transition: all 0.5 ease-in-out;
@@ -515,6 +515,13 @@ header .header-btn {
   overflow: hidden;
   transform: translate(0, 0);
   z-index: 2;
+}
+
+#faq .faq-page ul li i:checked~::after{
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
 }
 
 .faq-page h2 {

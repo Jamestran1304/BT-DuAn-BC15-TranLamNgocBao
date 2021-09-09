@@ -495,13 +495,11 @@ header .header-btn {
   content: "\f078";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
-  position: relative;
+  position: absolute;
   width: 3px;
   height: 9px;
   transition: all 0.5 ease-in-out;
-  opacity: 1;
-  transform: translate(0, 0);
-  z-index: 2;
+  opacity: 0;
 }
 
 #faq .faq-page ul li i::after {
@@ -512,20 +510,16 @@ header .header-btn {
   width: 3px;
   height: 9px;
   transition: all 0.5 ease-in-out;
-  opacity: 0;
-  overflow: hidden;
-  transform: translate(0, 0);
-  z-index: 2;
-}
-
-#faq .faq-page ul li input:checked ~ i::before {
-  opacity: 0;
-}
-
-#faq .faq-page ul li input:checked ~ i::after {
   opacity: 1;
 }
 
+#faq .faq-page ul li input:checked ~ i::before {
+  opacity: 1;
+}
+
+#faq .faq-page ul li input:checked ~ i::after {
+  opacity: 0;
+}
 .faq-page h2 {
   font-size: 20px;
   line-height: 1;

@@ -511,7 +511,7 @@ header .header-btn {
   width: 3px;
   height: 9px;
   transition: all 0.5 ease-in-out;
-  opacity:0;
+  opacity:1;
   overflow: hidden;
   transform: translate(0, 0);
   z-index: 2;
